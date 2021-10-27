@@ -1,0 +1,5 @@
+DROP DATABASE IF EXISTS _____;
+
+CREATE DATABASE ____;
+
+use ____;
