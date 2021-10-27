@@ -1,56 +1,91 @@
 const router = require('express').Router();
-const { Board, List, Card } = require('../../models');
+const { User } = require('../../models');
 
+// get all users
 router.get('/', (req, res) => {
-    List.findAll({
-
-    })
+  User.findAll({
+    attributes: { exclude: ['password'] }
+  })
     .then(dbUserData => res.json(dbUserData))
     .catch(err => {
-        console.log(err);
-        res.status(500).json(err);
-    })
-})
+      console.log(err);
+      res.status(500).json(err);
+    });
+});
 
-// Search bar to find one? 
 router.get('/:id', (req, res) => {
-    List.findOne({
-        where: {
-            id: req.params.id
-        },
-        // include a specific one?
+  User.findOne({
+    attributes: { exclude: ['password'] },
+    where: {
+      id: req.params.id
+    }
+  })
+    .then(dbUserData => {
+      if (!dbUserData) {
+        res.status(404).json({ message: 'No user found with this id' });
+        return;
+      }
+      res.json(dbUserData);
     })
-    .then(dbUserData => res.json(dbUserData))
     .catch(err => {
-        console.log(err);
-        res.status(500).json(err);
+      console.log(err);
+      res.status(500).json(err);
     });
 });
 
-// Creates a new route
-List.post('/', (req, res) => {
-    Card.create({
-        card_name: req.body.card_name // this is to make a new card?
-    })
+router.post('/', (req, res) => {
+  // expects {username: 'Lernantino', email: 'lernantino@gmail.com', password: 'password1234'}
+  User.create({
+    username: req.body.username,
+    email: req.body.email,
+    password: req.body.password
+  })
     .then(dbUserData => res.json(dbUserData))
     .catch(err => {
-        console.log(err);
-        res.status(500).json(err);
+      console.log(err);
+      res.status(500).json(err);
     });
 });
 
-//Deletes a route 
+router.put('/:id', (req, res) => {
+  // expects {username: 'Lernantino', email: 'lernantino@gmail.com', password: 'password1234'}
+
+  // pass in req.body instead to only update what's passed through
+  User.update(req.body, {
+    where: {
+      id: req.params.id
+    }
+  })
+    .then(dbUserData => {
+      if (!dbUserData[0]) {
+        res.status(404).json({ message: 'No user found with this id' });
+        return;
+      }
+      res.json(dbUserData);
+    })
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+});
+
 router.delete('/:id', (req, res) => {
-    List.destroy({
-        where: {
-            id: req.params.id
-        }
+  User.destroy({
+    where: {
+      id: req.params.id
+    }
+  })
+    .then(dbUserData => {
+      if (!dbUserData) {
+        res.status(404).json({ message: 'No user found with this id' });
+        return;
+      }
+      res.json(dbUserData);
     })
-    .then(dbUserData => res.json(dbUserData))
     .catch(err => {
-        console.log(err);
-        res.status(500).json(err);
-    })
-})
+      console.log(err);
+      res.status(500).json(err);
+    });
+});
 
 module.exports = router;

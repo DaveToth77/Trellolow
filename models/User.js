@@ -1,39 +1,45 @@
-const { Model } = require('sequelize');
+const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class User extends Model {};
+// create our User model
+class User extends Model {}
 
+// create fields/columns for User model
 User.init(
-    {
-        id: {
-            type: Datatypes.INTEGER,
-            allowNull: false,
-            autoIncrement: true,
-            primaryKey: true
-         },
-   
-         first_name: {
-            type: Datatypes.STRING,
-            allowNull: false,
-         },
-   
-         last_name: {
-            type: Datatypes.STRING,
-            allowNull: false,
-         },
-         
-         email: {
-             type: Datatypes.STRING,
-             allowNull: false,
-         }
+  {
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true
     },
-         {
-            sequelize,
-            timestamps: false,
-            freezeTableName: true,
-            underscored: true,
-            modelName: 'user'
-         }
-      )
-      
-      module.exports = User;
+    username: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    email: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true,
+      validate: {
+        isEmail: true
+      }
+    },
+    password: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [4]
+      }
+    }
+  },
+  {
+    sequelize,
+    timestamps: false,
+    freezeTableName: true,
+    underscored: true,
+    modelName: 'user'
+  }
+);
+
+module.exports = User;
