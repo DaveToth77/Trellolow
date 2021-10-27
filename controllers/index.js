@@ -9,5 +9,3 @@ router.use((req, res) => {
 });
 
 module.exports = router;
-
-// This was helpful from the routes form other places to help
