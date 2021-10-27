@@ -1,5 +1,5 @@
-DROP DATABASE IF EXISTS _____;
+DROP DATABASE IF EXISTS trellolow_db;
 
-CREATE DATABASE ____;
+CREATE DATABASE trellolow_db;
 
-use ____;
+use trellolow_db;
