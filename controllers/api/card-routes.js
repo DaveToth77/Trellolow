@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User, Board, Card } = require('../../models');
+const { User, Board, List } = require('../../models');
 
 router.get('/', (req, res) => {
     Card.findAll({
@@ -27,6 +27,7 @@ router.get('/:id', (req, res) => {
     });
 });
 
+// Creates a new route
 router.post('/', (req, res) => {
     Card.create({
         card_name: req.body.card_name // this is to make a new card?
@@ -38,3 +39,18 @@ router.post('/', (req, res) => {
     });
 });
 
+//Deletes a route 
+router.delete('/:id', (req, res) => {
+    Card.destroy({
+        where: {
+            id: req.params.id
+        }
+    })
+    .then(dbCardData => res.json(dbCardData))
+    .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    })
+})
+
+module.exports = router;
