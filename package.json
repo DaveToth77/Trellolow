@@ -1,0 +1,27 @@
+{
+  "name": "trellolow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express-handlebars": "^5.3.4",
+    "jest": "^27.3.1",
+    "mysql2": "^2.3.2",
+    "sequelize": "^6.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaveToth77/Trellolow.git"
+  },
+  "author": "Group 6",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DaveToth77/Trellolow/issues"
+  },
+  "homepage": "https://github.com/DaveToth77/Trellolow#readme"
+}
