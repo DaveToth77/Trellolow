@@ -1,6 +1,6 @@
 # Trellolow
 ## Description
-
+Trellolow is a Project Management Tool that organizes your project using a Kanaban board.  You can easily view what you are working on, who is assigned to any step, what you have competed and what is left to be done.  Trellolow utilizes cards that you may use for tasks, reminders, notes, general information, and resources.  Use it like a whiteboard or a spare filing cabinet for your brain.
 
 ## Page Link
 
@@ -26,6 +26,7 @@ https://
   - [License](#license)
 
 ## Built With
+
 
 ## Code Link
 
@@ -70,8 +71,7 @@ The application/site can be displayed in a web browser and was built mobile firs
 For personal, non-commercial, and educational use and participating developer(s) portfolio purposes.
 
 ## Support
-Contact:  
-Email:  
+
 
 ## Roadmap
 
