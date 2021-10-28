@@ -26,7 +26,15 @@ https://
   - [License](#license)
 
 ## Built With
-
+- Node.js
+- Express.js
+- RESTfulAPI
+- Handlebars.js
+- MySQL
+- Sequelize ORM
+- MVC Paradigm Folder Structure
+- GET and POST routes
+- Express-session and Cookies
 
 ## Code Link
 
