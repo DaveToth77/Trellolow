@@ -101,7 +101,7 @@ Future features:
 
 ## Contributions
 
-Although, contributions are not allowed, at this time.  You may send any feedback on the code to: xxxxxxxx.  Acknowledgements??? (mentors or ???)
+Although, contributions are not allowed, at this time.  You may submit any feedback on the code to through github issues. 
 
 ## Credits
 Developers:
