@@ -104,12 +104,15 @@ Future features:
 Although, contributions are not allowed, at this time.  You may send any feedback on the code to: xxxxxxxx.  Acknowledgements??? (mentors or ???)
 
 ## Credits
-
 Developers:
-
+  Sean Murphy: Full-Stack Web Developer
+    Email: smurphy7326@gmail.com
+  David Toth: Full-Stack Web Developer
+    Email: dtoth77@gmail.com
+  Sherri Winslow: Full-Stack Web Develop
+    Email: swinslowcoding@gmail.com
   
 ## License
-
 For Personal, Educational and Portfolio use.
 
-©2021 
+©2021 Murphy, Toth, & Winslow
