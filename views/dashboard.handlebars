@@ -1,0 +1,27 @@
+<section>
+  <h3>Create New List</h3>
+
+  <form class="new-list-form">
+    <div>
+      <label for="list-title">Title</label>
+      <input type="text" id="list-title" name="list-title" />
+    </div>
+    <button type="submit" class="btn">Create</button>
+  </form>
+</section>
+
+{{#if lists.length}}
+<section>
+  <h2>Your Lists</h2>
+  <ol>
+    {{#each lists as |list|}}
+    <li>
+      {{> list-info list}}
+      <a href="/dashboard/edit/{{list.id}}" class="edit-link">Edit list</a>
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{/if}}
+
+<script src="/javascript/addList.js"></script>
