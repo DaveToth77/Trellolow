@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.listMainWrapper {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.listWrapper{
+    width: 90%;
+    background-color: #fff;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.list{
+    background-color: rgb(237, 235, 235);
+    width: 85%;
+    height: 150px;
+    border: 2px solid rgb(27, 27, 27);
+box-shadow: 0px 0px 5px rgb(27, 27, 27);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+
+}
+
+.list-header{
+    background-color:lightgray;
+    color: rgb(51, 51, 94);
+    width: 100%;
+    height: 40px;
+    border-radius: 7px 7px 0 0;
+font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    
+    
+
+}
+
+.list-body{
+    width: 90%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border-bottom: 20px; */
+
+}
+
+.listWrapper{
+    width: 90%;
+    background-color: #fff;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+
+}
+
+.newList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 40px;
+border: 10px;
+padding: 20px;
+
+}
+
+.list-options {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+
+}
+
+h3{
+    margin-right: 25px;
+}

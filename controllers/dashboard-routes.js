@@ -19,14 +19,30 @@ router.get('/', (req, res) => {
                 'title',
                 'user_id',
             ],
-        })
-        .then(dbListData => {
+            // include: [
+            //     {
+            //       model: Card,
+            //       attributes: ['id', 'content',  'user_id', ],
+            //     //   include: {
+            //     //     model: User,
+            //     //     attributes: ['user_id']
+            //     //   }
+            //     },
+            //     // {
+            //     //   model: User,
+            //     //   attributes: ['user_id']
+            //     // }
+            //   ]
+            })        .then(dbListData => {
             // console.log(`================`)
             // console.log(dbListData);
             const lists = dbListData.map(list => list.get({
                 plain: true
             }));
+            
+            console.log(`************`)
             console.log(lists)
+            // console.log({cards})
             res.render('dashboard', {
                 lists,
                 loggedIn: true
@@ -37,6 +53,7 @@ router.get('/', (req, res) => {
             res.status(500).json(err);
         });
 });
+
 
 router.get('/edit/:id', (req, res) => {
   List.findByPk(req.params.id, {
@@ -84,37 +101,37 @@ router.get('/edit/:id', (req, res) => {
 
 //get all cards for dashboard
 
-router.get('/', (req, res) => {
-    console.log(req.session);
-    console.log('======================');
-    Card.findAll({
-            where: {
-                user_id: req.session.user_id
-            },
-            attributes: [
-                'id',
-                'title',
-                'content',
-                'user_id'
-            ],
-        })
-        .then(dbCardData => {
-            console.log(`================`)
-            console.log(dbCardData);
-            const Cards = dbCardData.map(card => card.get({
-                plain: true
-            }));
-            console.log(Cards)
-            res.render('dashboard', {
-                cards,
-                loggedIn: true
-            });
-        })
-        .catch(err => {
-            console.log(err);
-            res.status(500).json(err);
-        });
-});
+// router.get('/', (req, res) => {
+//     console.log(req.session);
+//     console.log('======================');
+//     Card.findAll({
+//             where: {
+//                 user_id: req.session.user_id
+//             },
+//             attributes: [
+//                 'id',
+//                 'title',
+//                 'content',
+//                 'user_id'
+//             ],
+//         })
+//         .then(dbCardData => {
+//             console.log(`================`)
+//             console.log(dbCardData);
+//             const Cards = dbCardData.map(card => card.get({
+//                 plain: true
+//             }));
+//             console.log(Cards)
+//             res.render('dashboard', {
+//                 cards,
+//                 loggedIn: true
+//             });
+//         })
+//         .catch(err => {
+//             console.log(err);
+//             res.status(500).json(err);
+//         });
+// });
 
 
 module.exports = router;
