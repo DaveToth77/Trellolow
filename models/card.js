@@ -17,11 +17,17 @@ Card.init(
       
     },
     content: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'list',
-        key: 'id'
-      }
+      type: DataTypes.STRING,
+      allowNull: true,
+      // references: {
+        // model: 'list',
+        // key: 'id'
+      // }
+    },
+    user_id: {
+      type: DataTypes.STRING,
+      allowNull: true,
+  
     },
     list_id: {
       type: DataTypes.INTEGER,

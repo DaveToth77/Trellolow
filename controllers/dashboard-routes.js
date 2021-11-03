@@ -8,8 +8,8 @@ const {
 
 // get all posts for dashboard
 router.get('/', (req, res) => {
-    console.log(req.session);
-    console.log('======================');
+    // console.log(req.session);
+    // console.log('======================');
     List.findAll({
             where: {
                 user_id: req.session.user_id
@@ -39,9 +39,12 @@ router.get('/', (req, res) => {
             // ]
         })
         .then(dbListData => {
+            // console.log(`================`)
+            // console.log(dbListData);
             const lists = dbListData.map(list => list.get({
                 plain: true
             }));
+            // console.log(lists)
             res.render('dashboard', {
                 lists,
                 loggedIn: true
@@ -54,7 +57,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/edit/:id', (req, res) => {
-    Post.findByPk(req.params.id, {
+  List.findByPk(req.params.id, {
             attributes: [
                 'id',
                 'title',
@@ -80,7 +83,7 @@ router.get('/edit/:id', (req, res) => {
         })
         .then(dbListData => {
             if (dbListData) {
-                const post = dbListData.get({
+                const List = dbListData.get({
                     plain: true
                 });
 
@@ -96,5 +99,39 @@ router.get('/edit/:id', (req, res) => {
             res.status(500).json(err);
         });
 });
+
+//get all cards for dashboard
+
+router.get('/', (req, res) => {
+    console.log(req.session);
+    console.log('======================');
+    Card.findAll({
+            where: {
+                user_id: req.session.user_id
+            },
+            attributes: [
+                'title',
+                'content',
+                'user_id'
+            ],
+        })
+        .then(dbCardData => {
+            console.log(`================`)
+            console.log(dbCardData);
+            const Cards = dbCardData.map(card => card.get({
+                plain: true
+            }));
+            console.log(Cards)
+            res.render('dashboard', {
+                cards,
+                loggedIn: true
+            });
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json(err);
+        });
+});
+
 
 module.exports = router;

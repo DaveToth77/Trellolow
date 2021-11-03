@@ -1,13 +1,13 @@
 async function newFormHandler(event) {
     event.preventDefault();
   
-    const title = document.querySelector('input[name="List-title"]').value;
+    const title = document.querySelector('input[name="list-title"]').value;
   
     const response = await fetch(`/api/lists`, {
       method: 'POST',
       body: JSON.stringify({
         title,
-        user_id
+        // user_id
       }),
       headers: {
         'Content-Type': 'application/json'
