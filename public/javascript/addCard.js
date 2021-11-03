@@ -4,7 +4,6 @@ async function addCard(event) {
     const title = document.querySelector('#cardTitle').value.trim();
     const content = document.querySelector('#cardContent').value.trim();
 
-    console.log(title, content)
 
     if (title && content) {
 

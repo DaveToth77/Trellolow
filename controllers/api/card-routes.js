@@ -18,12 +18,15 @@ router.post('/', (req, res) => {
             title: req.body.title,
             content: req.body.content,
             user_id: req.session.user_id,
+            list_id: req.body.post_id
         })
-        .then(dbCardData => res.json(dbCardData))
+        .then(dbCardData => res.json(dbCardData)) 
+        //returns the new card
         .catch(err => {
             console.log(err);
             res.status(400).json(err);
         });
+        
 });
 
 router.delete('/:id', (req, res) => {
