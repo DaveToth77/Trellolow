@@ -17,9 +17,17 @@
       
         <div class="cardWrapper">
       <div class="card">
-        <h5 class="card-header">{{cards.title}}</h5>
-          <div class=“content”>
-          {{cards.content}}
+        {{#if cards.length}}
+<section>
+  <div>
+    {{#each cards as |card|}}
+        
+            {{> card-info card}} 
+        
+    {{/each}}
+  </div>
+</section>
+{{/if}}
           </div>
         </div>
       </div>

@@ -19,34 +19,30 @@ router.get('/', (req, res) => {
                 'title',
                 'user_id',
             ],
-            // include: [{
-            //         model: Card,
-            //         attributes: [
-            //             'id',
-            //             'title',
-            //             'content',
-            //             'user_id',
-            //         ],
-            //         include: {
-            //             model: User,
-            //             attributes: ['username']
-            //         }
-            //     },
-            //     {
-            //         model: User,
-            //         attributes: ['username']
-            //     }
-            // ]
+            include: [
+                {
+                    model: Card,
+                    attributes: ['id','title','content','user_id'],
+                    include: {
+                        model: User,
+                        attributes: ['username']
+                    }
+                },
+                {
+                    model:User,
+                    attributes: ['username']
+                }
+            ]
         })
         .then(dbListData => {
-            // console.log(`================`)
-            // console.log(dbListData);
+            console.log(`================`)
+            console.log(dbListData);
             const lists = dbListData.map(list => list.get({
                 plain: true
             }));
-            // console.log(lists)
+            console.log(lists)
             res.render('dashboard', {
-                lists,
+                lists, 
                 loggedIn: true
             });
         })

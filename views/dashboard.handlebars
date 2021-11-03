@@ -22,7 +22,7 @@
 </section>
 {{/if}}
 
-{{!-- {{#if cards.length}} --}}
+{{#if cards.length}}
 <section>
   <ol>
     {{#each cards as |card|}}
@@ -33,7 +33,7 @@
     {{/each}}
   </ol>
 </section>
-{{!-- {{/if}} --}}
+{{/if}}
 
 
 <div class="modal fade" id="addCardModal" tabindex="-1" role="dialog" aria-labelledby="addCardModal" aria-hidden="true">
