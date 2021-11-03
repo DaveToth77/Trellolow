@@ -23,17 +23,18 @@
 </section>
 {{/if}}
 
-{{#if cards}}
+{{!-- {{#if cards.length}} --}}
 <section>
-<ul class=“card”>
+  <ol>
     {{#each cards as |card|}}
         <li>
-            {{> cards }}
+            {{> card-info card}} 
+            <a href="/dashboard/edit/{{card.id}}" class="edit-link">Edit card</a>
         </li>
     {{/each}}
-</ul>
+  </ol>
 </section>
-{{/if}}
+{{!-- {{/if}} --}}
 
 
 <div class="modal fade" id="addCardModal" tabindex="-1" role="dialog" aria-labelledby="addCardModal" aria-hidden="true">
