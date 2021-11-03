@@ -10,17 +10,14 @@
   </form>
 </section>
 
+<div class="listMainWrapper container-fluid">
+
 {{#if lists.length }}
-<section class="listMainWrapper" id="list-main-wrapper">
-  
     {{#each lists as |list|}}
      {{> list-info list}}
-   
-    {{/each}}
-     
-  
-</section>
+    {{/each}}  
 {{/if}}
+</div>
 
 {{#if cards.length}}
 <section>
