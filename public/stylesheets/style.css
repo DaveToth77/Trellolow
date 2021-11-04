@@ -31,7 +31,8 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    margin: auto;
 }
 
 .listWrapper{
