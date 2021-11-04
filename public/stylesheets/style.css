@@ -14,6 +14,16 @@
 --tertiary:#ED6A5A;
 --dark-opal: #9BC1BC;
 --light-alabaster: #E6EBE0;
+--bg-wrapper: #fff;
+/* bg-list #edebeb */
+--bg-list: rgb(237, 235, 235);
+/* header-list #1b1b1b */
+--border-list: rgb(27, 27, 27);
+/* header-list: #d3d3d3 */
+--header-list: lightgray;
+/* header-list-font #33335e */
+--header-list-font: rgb(51, 51, 94);
+
 }
 
 .cardWrapper {
