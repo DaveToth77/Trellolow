@@ -1,7 +1,30 @@
+/* Global Styles */
 *{
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+/* JS Root Colors */
+:root {
+/* Primary - ; Secondary - ; Tertiary - */
+/* Dark - ; Light - */
+--primary: #36C9C6;
+--secondary:#F4F1BB;
+--tertiary:#ED6A5A;
+--dark-opal: #9BC1BC;
+--light-alabaster: #E6EBE0;
+}
+
+.cardWrapper {
+  width: 85%;
+  }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
 }
 
 .listMainWrapper {
@@ -10,7 +33,8 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    margin: auto;
 }
 
 .listWrapper{
