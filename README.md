@@ -56,21 +56,21 @@ AS A user
 
 ## CRITERIA
 
-- GIVEN THAT I
-  - WHEN I 
-    - THEN 
-  - WHEN I 
-    - THEN I 
-  - WHEN I 
-    - THEN 
-  - WHEN 
-    - THEN 
-  - WHEN 
-    - THEN 
-  - WHEN 
-    - THEN 
-  - When  
-    - Then 
+- GIVEN THAT I want to be able to organize my notes and lists digitally, in a single location, with authentication:
+  - WHEN I open the app I want to be given an option to be directed to a log-in and/or signup page.
+    - THEN I can chose a button, or link, to go to a page(s) where I will find a form to complete based on my option. 
+  - WHEN I complete the form, by entering my information, depending upon whether it is my first time, or I am already registered,
+    - THEN I can make another selection, which will take me to the main dashboard that contains a place for my information.
+  - WHEN I reach the dashboard,
+    - THEN I can choose to create a new list and give it a new title, or view and interact with lists that I have previously created, if any.
+  - WHEN I have lists, they will be displayed across the screen with options for action, 
+    - THEN I may choose to add a card, edit or view and existing list.
+  - WHEN I choose to edit, or create, a card,
+    - THEN a display will pop up and allow me to create a new card, or edit the information of the existing card.
+  - WHEN I have completed the information,
+    - THEN I may save the card
+  - When I need to move the card to another list
+    - Then I can select the card I wish to relocate and move it to the appropriate list.
 
 ## Installation
 
