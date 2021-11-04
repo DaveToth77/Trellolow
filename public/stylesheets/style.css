@@ -48,9 +48,9 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,96,121,1) 7%, rgba(
   margin-left: 30px;
 }
 
-.hide {
+/* .hide {
   display: none;
-}
+} */
 
 footer {
   position: absolute;
