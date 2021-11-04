@@ -55,7 +55,7 @@ footer {
     width: 85%;
     height: 150px;
     border: 2px solid rgb(27, 27, 27);
-box-shadow: 0px 0px 5px rgb(27, 27, 27);
+    /* box-shadow: 0px 0px 5px rgb(27, 27, 27); */
     border-radius: 7px;
     display: flex;
     flex-direction: column;
@@ -136,7 +136,7 @@ h3{
 
 .card {
     border: 2px solid rgb(27, 27, 27);
-    box-shadow: 0px 0px 5px rgb(27, 27, 27);
+    /* box-shadow: 0px 0px 5px rgb(27, 27, 27); */
         border-radius: 7px;
         display: flex;
         flex-direction: column;
