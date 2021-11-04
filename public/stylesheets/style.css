@@ -9,9 +9,10 @@
 :root {
 /* Primary - ; Secondary - ; Tertiary - */
 /* Dark - ; Light - */
---primary: #36C9C6;
---secondary:#F4F1BB;
---tertiary:#ED6A5A;
+--primary: #0d6efd;
+--secondary: #36C9C6;
+--tertiary:#F4F1BB;
+--quartenary:#ED6A5A;
 --dark-opal: #9BC1BC;
 --light-alabaster: #E6EBE0;
 --bg-wrapper: #fff;
@@ -23,12 +24,33 @@
 --header-list: lightgray;
 /* header-list-font #33335e */
 --header-list-font: rgb(51, 51, 94);
+--btn-card-outline: #17a2b8;
+}
 
+.dashboard {
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,96,121,1) 7%, rgba(5,198,254,1) 79%);
 }
 
 .cardWrapper {
   width: 85%;
   }
+
+.login-form {
+  margin: 20 20;
+}
+
+.login-form input {
+  width: 300px;
+}
+
+#login-l1 {
+  margin-left: 30px;
+}
+
+.hide {
+  display: none;
+}
 
 footer {
   position: absolute;
@@ -55,8 +77,6 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    
-
     
 }
 
