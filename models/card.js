@@ -25,17 +25,17 @@ Card.init(
       // }
     },
     user_id: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allowNull: true,
   
     },
-    list_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'list',
-        key: 'id'
-      }
-    }
+    // list_id: {
+    //   type: DataTypes.INTEGER,
+    //   references: {
+    //     model: 'list',
+    //     key: 'id'
+    //   }
+    // }
   },
   {
     sequelize,

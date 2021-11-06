@@ -10,30 +10,15 @@
   </form>
 </section>
 
+<div class="listMainWrapper container-fluid">
+
 {{#if lists.length }}
-<section class="listMainWrapper" id="list-main-wrapper">
-  
     {{#each lists as |list|}}
      {{> list-info list}}
-   
-    {{/each}}
-     
-  
-</section>
+    {{/each}}  
 {{/if}}
+</div>
 
-{{#if cards.length}}
-<section>
-  <ol>
-    {{#each cards as |card|}}
-        <li>
-            {{> card-info card}} 
-            <a href="/dashboard/edit/{{card.id}}" class="edit-link">Edit card</a>
-        </li>
-    {{/each}}
-  </ol>
-</section>
-{{/if}}
 
 
 <div class="modal fade" id="addCardModal" tabindex="-1" role="dialog" aria-labelledby="addCardModal" aria-hidden="true">
@@ -63,6 +48,8 @@
   </div>
 </div>
 </body>
+
+
 <script src="/javascript/addCard.js"></script>
 
 

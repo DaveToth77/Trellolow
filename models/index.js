@@ -3,7 +3,7 @@ const Card = require('./Card');
 const List = require('./List');
 
 User.hasMany(List, {
-    foreignKey: 'user_id'
+    // foreignKey: 'user_id'
   });
   
   List.belongsTo(User, {
@@ -11,17 +11,17 @@ User.hasMany(List, {
     onDelete: 'SET NULL'
   });
   
-  User.belongsToMany(List, {
-    through: Card,
-    foreignKey: 'user_id',
-    onDelete: 'SET NULL'
-  });
+  // User.belongsToMany(List, {
+  //   through: Card,
+  //   foreignKey: 'user_id',
+  //   onDelete: 'SET NULL'
+  // });
   
-  List.belongsToMany(User, {
-    through: Card,
-    foreignKey: 'user_id',
-    onDelete: 'SET NULL'
-  });
+  // List.belongsToMany(User, {
+  //   through: Card,
+  //   foreignKey: 'user_id',
+  //   onDelete: 'SET NULL'
+  // });
     
   Card.belongsTo(User, {
     foreignKey: 'user_id',
@@ -30,12 +30,12 @@ User.hasMany(List, {
   
   Card.belongsTo(List, {
     foreignKey: 'user_id',
-    onDelete: 'SET NULL'
+    // onDelete: 'SET NULL'
   });
   
   User.hasMany(Card, {
     foreignKey: 'user_id',
-    onDelete: 'SET NULL'
+    // onDelete: 'SET NULL'
   });
   
   List.hasMany(Card, {
