@@ -1,4 +1,5 @@
 # Trellolow
+
 ## Description
 
 Trellolow is a Project Management Tool that organizes your project using a Kanaban board.   It functions like a board of stickies that you can organize in columns.  You can easily view what you are working on, who is assigned to any step, what you have competed and what is left to be done.  Trellolow utilizes cards that you may use for tasks, reminders, notes, general information, and resources.  Use it like a whiteboard or a spare filing cabinet for your brain.
@@ -9,21 +10,20 @@ https://github.com/DaveToth77/Trellolow
 
 ## Table of Contents
 
-- [Trellolow](#trellolow)
-  - [Description](#description)
-  - [Page Link](#page-link)
-  - [Table of Contents](#table-of-contents)
-  - [Built With](#built-with)
-  - [Code Link](#code-link)
-  - [User Story](#user-story)
-  - [CRITERIA](#criteria)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Support](#support)
-  - [Roadmap](#roadmap)
-  - [Contributions](#contributions)
-  - [Credits](#credits)
-  - [License](#license)
+* [Description](#description)
+* [Page Link](#page-link)
+* [Table of Contents](#table-of-contents)
+* [Built With](#built-with)
+* [Code Link](#code-link)
+* [User Story](#user-story)
+* [CRITERIA](#criteria)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Support](#support)
+* [Roadmap](#roadmap)
+* [Contributions](#contributions)
+* [Credits](#credits)
+* [License](#license)
 
 ## Built With
 
@@ -39,7 +39,7 @@ https://github.com/DaveToth77/Trellolow
 
 ## Code Link
 
-https://
+https://git.heroku.com/immense-ocean-25208.git
 
 ## User Story
 
@@ -68,12 +68,53 @@ Then I can select the card I wish to relocate and move it to the appropriate lis
 
 ## Installation
 
-The application/site can be displayed in a web browser and was built mobile first to be responsive to a variety of devices and screen sizes.
+To install this application you must have a few things on your computer already installed. Node.js and MySql should be on the computer to make sure the software is ready to run the app. Once these are installed, you can follow along for more specific instructions from the video that is above.
+
+At the repo for this project, click on the green button.
+
+Click on the SSH Key and copy the link to be used later.
+
+Create a new folder on your desktop.
+
+Open up Terminal.
+
+Navigate to the new folder on the desktop and type in "git clone" and paste the link that was copied from teh Github repo.
+
+Go into the folder and go into the folder that was cloned from the repo.
+
+When you are there, type in "npm install" to install the dependencies that are needed for the project.
+
+While are you are in the root folder, type in "mysql -u root -p", where it will take you to to insert your password.
+
+When you have entered in the beginning of the Terminal will have mysql and then you can type in "source db/schema.sql". This wording will allow the user to create a the database "trellolow_db" and the tables that correspond with the database.
+
+In order for the database to correctly interact with the server, you have to make a new ".env" file. Make sure the file has the structure of 
+
+DB_HOST=localhost
+DB_NAME='trellolow_db'
+DB_USER=‘root’
+DB_PW=‘your-password’
+
+In there you must add  and make sure the DB_PW is you MySql password.
+
+Then type "quit" to leave MySql.
+
+Type in "npm run seed" in the terminal and that will populate the database with table and rows.
+
+For more specific instructions, please reach out to me with questions with the links below!
 
 
 ## Usage
 
-For personal, non-commercial, and educational use and participating developer(s) portfolio purposes.
+To use the application
+
+Open the root folder of the repo with Terminal or Git bash.
+
+This root folder is "Trellolow".
+
+Run the command "npm start". This will create a message tha the local server is working on port 3001.
+
+Then you can go to the localhost3001 on your browser of choice and run the app. 
 
 ## Support
 
