@@ -1,7 +1,7 @@
 # Trellolow
 ## Description
 
-Trellolow is a Project Management Tool that organizes your project using a Kanaban board.  You can easily view what you are working on, who is assigned to any step, what you have competed and what is left to be done.  Trellolow utilizes cards that you may use for tasks, reminders, notes, general information, and resources.  Use it like a whiteboard or a spare filing cabinet for your brain.
+Trellolow is a Project Management Tool that organizes your project using a Kanaban board.   It functions like a board of stickies that you can organize in columns.  You can easily view what you are working on, who is assigned to any step, what you have competed and what is left to be done.  Trellolow utilizes cards that you may use for tasks, reminders, notes, general information, and resources.  Use it like a whiteboard or a spare filing cabinet for your brain.
 
 ## Page Link
 
@@ -28,14 +28,14 @@ https://
 
 ## Built With
 
+- Server-side JavaScript
 - Node.js
 - Express.js
-- RESTfulAPI
+- RESTful APIs
 - Handlebars.js
-- MySQL
-- Sequelize ORM
+- MySQL 
+- Sequelize ORM (Object-Relational Mapping)
 - MVC Paradigm Folder Structure
-- GET and POST routes
 - Express-session and Cookies
 
 ## Code Link
@@ -51,7 +51,7 @@ Main Page
 
 AS A user
 
-- I WANT an easy to use project managerment tool that provides one place to keep information and track of progress on a project.
+- I WANT an easy to use project management tool that provides one place to keep information and track of progress on a project.
   - SO THAT I can eliminate wasted time, lost ideas and notes, and improve my productivity and time management.
 
 ## CRITERIA
