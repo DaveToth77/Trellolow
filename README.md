@@ -1,7 +1,12 @@
 # Trellolow
 ## Description
 
+<<<<<<< HEAD
 Trellolow is a Project Management Tool that organizes your project using a Kanaban board.   It functions like a board of stickies that you can organize in columns.  You can easily view what you are working on, who is assigned to any step, what you have competed and what is left to be done.  Trellolow utilizes cards that you may use for tasks, reminders, notes, general information, and resources.  Use it like a whiteboard or a spare filing cabinet for your brain.
+=======
+Trellolow is a project management tool for individuals and group settings.  People of all ages can make boards, in seconds, collaborate with peers or students and make tough tasks seem less difficult.  You may use the 'Kanban' board for tasks, reminders, notes, receipes, general information, resources, or what every you need to track.  By creating columns, or lists, and organizing your thoughts into cards, that can be moved between the column lists, you can use it like a whiteboard or spare filing cabinet for your brain.  View, save, and retrieve your thoughtds and never loose a note, sticky, or thought again.
+
+>>>>>>> 8ede7facabb7eb812157363ae7c79ba09d84e8ce
 
 ## Page Link
 
@@ -40,7 +45,11 @@ https://
 
 ## Code Link
 
+<<<<<<< HEAD
 https://
+=======
+https://github.com/DaveToth77/Trellolow
+>>>>>>> 8ede7facabb7eb812157363ae7c79ba09d84e8ce
 
 ## Visuals
 
@@ -51,11 +60,16 @@ Main Page
 
 AS A user
 
+<<<<<<< HEAD
 - I WANT an easy to use project management tool that provides one place to keep information and track of progress on a project.
+=======
+- I WANT an easy to use tool that provides one place to keep information and track of progress on a project and keep and organize tasks, ideas, and information.
+>>>>>>> 8ede7facabb7eb812157363ae7c79ba09d84e8ce
   - SO THAT I can eliminate wasted time, lost ideas and notes, and improve my productivity and time management.
 
 ## CRITERIA
 
+<<<<<<< HEAD
 - GIVEN THAT I
   - WHEN I 
     - THEN 
@@ -75,6 +89,27 @@ AS A user
 ## Installation
 
 The application/site can be displayed in a web browser and was built mobile first to be responsive to a variety of devices and screen sizes.
+=======
+- GIVEN THAT I want to be able to organize notes and lists digitally, in a single location, for my self and any grup members to be authenticated:
+  - WHEN I open the app I want to be given an option to be directed to a log-in and/or signup page.
+    - THEN I can chose a button, or link, to go to a page(s) where I will find a form to complete based on my option. 
+  - WHEN I complete the form, by entering my information, depending upon whether it is my first time, or I am already registered,
+    - THEN I can make another selection, which will take me to the main dashboard that contains a place for my information.
+  - WHEN I reach the dashboard,
+    - THEN I can choose to create a new list and give it a new title, or view and interact with lists that I have previously created, if any.
+  - WHEN I have lists, they will be displayed across the screen with options for action, 
+    - THEN I may choose to add a card, edit or view and existing list.
+  - WHEN I choose to edit, or create, a card,
+    - THEN a display will pop up and allow me to create a new card, or edit the information of the existing card.
+  - WHEN I have completed the information,
+    - THEN I may save the card
+  - When I need to move the card to another list
+    - Then I can select the card I wish to relocate and move it to the appropriate list.
+
+## Installation
+
+The application/site can be displayed in a web browser and is built to be responsive to a variety of devices and screen sizes.
+>>>>>>> 8ede7facabb7eb812157363ae7c79ba09d84e8ce
 
 
 ## Usage
@@ -101,7 +136,11 @@ Future features:
 
 ## Contributions
 
+<<<<<<< HEAD
 Although, contributions are not allowed, at this time.  You may submit any feedback on the code to through github issues. 
+=======
+You may submit any feedback on the code, suggestions, or contribution requests through github issues. 
+>>>>>>> 8ede7facabb7eb812157363ae7c79ba09d84e8ce
 
 ## Credits
 Developers:
