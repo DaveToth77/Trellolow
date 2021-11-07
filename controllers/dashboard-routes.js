@@ -108,7 +108,8 @@ router.get('/', (req, res) => {
             attributes: [
                 'title',
                 'content',
-                'user_id'
+                'user_id',
+                'card_id'
             ],
         })
         .then(dbCardData => {

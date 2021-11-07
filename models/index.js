@@ -3,7 +3,7 @@ const Card = require('./Card');
 const List = require('./List');
 
 User.hasMany(List, {
-    // foreignKey: 'user_id'
+    foreignKey: 'user_id'
   });
   
   List.belongsTo(User, {
@@ -29,17 +29,17 @@ User.hasMany(List, {
   });
   
   Card.belongsTo(List, {
-    foreignKey: 'user_id',
-    // onDelete: 'SET NULL'
+    // foreignKey: 'user_id',
+    onDelete: 'SET NULL'
   });
   
   User.hasMany(Card, {
-    foreignKey: 'user_id',
-    // onDelete: 'SET NULL'
+    // foreignKey: 'user_id',
+    onDelete: 'SET NULL'
   });
   
   List.hasMany(Card, {
-    foreignKey: 'user_id'
+    // foreignKey: 'user_id'
   });
 
 module.exports = { User, Card, List };

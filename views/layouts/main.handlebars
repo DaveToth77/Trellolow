@@ -1,3 +1,5 @@
+
+   
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,30 +45,17 @@
       </li>
     </ul>
   </div>
-  <nav>
-        {{#if loggedIn}}
-        {{!-- <a href="/dashboard">dashboard</a>
-        <button id="logout" class="btn-no-style">logout</button> --}}
-        {{!-- {{else}}
-        {{!-- <a href="/login">login</a> --}} 
-        {{/if}}
-      </nav>
 </nav>
-
       {{{ body }}}
   
 <footer class="container-fluid bg-primary text-center pt-4">
   <p class="text-center">Thanks for choosing Trello! Where you can write down ideas and clear your mind!</p>
 </footer>
-
 {{#if loggedIn}}
 <script src="/javascript/logout.js"></script>
 {{/if}}
-
 </body>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-
 </html>
