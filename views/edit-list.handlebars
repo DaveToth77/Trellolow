@@ -1,0 +1,29 @@
+<article>
+  <a href="/dashboard"> &larr; Back to dashboard</a>
+  <h2>
+    Edit List
+  </h2>
+  <form class="edit-list-form">
+    <div>
+      <input name="list-title" type="text" value="{{list.title}}" />
+    </div>
+    <button type="submit">Save post</button>
+    <button type="button" class="delete-post-btn">Delete post</button>
+  </form>
+</article>
+
+<form class="card-form">
+  <div>
+    <textarea name="content"></textarea>
+  </div>
+
+  <div>
+    <button type="submit">Add description</button>
+  </div>
+</form>
+
+{{> cards list.cards}}
+
+<script src="/javascript/edit-list.js"></script>
+<script src="/javascript/delete-list.js"></script>
+<script src="/javascript/addCard.js"></script>

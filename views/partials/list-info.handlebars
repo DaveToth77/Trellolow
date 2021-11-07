@@ -1,0 +1,27 @@
+
+
+
+      <div class="list">
+        <div class="list-header">{{title}}
+        </div>
+          <div class="card container-fluid">
+            {{#if cards.length}}
+              {{#each cards as |card|}}
+                {{> card-info card}}
+              {{/each}}
+            {{/if}}
+          </div>
+          <div class="list-options">
+              <a href="/dashboard/edit/{{list.id}}" class="link-dark">Edit list</a>
+          <!-- Button trigger modal -->
+              <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#addCardModal">
+              Add a card
+              </button>
+          </div>
+      </div>
+    
+      
+
+      
+
+
