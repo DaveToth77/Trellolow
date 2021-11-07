@@ -52,12 +52,12 @@ Main Page
 
 AS A user
 
-- I WANT an easy to use project managerment tool that provides one place to keep information and track of progress on a project.
+- I WANT an easy to use tool that provides one place to keep information and track of progress on a project and keep and organize tasks, ideas, and information.
   - SO THAT I can eliminate wasted time, lost ideas and notes, and improve my productivity and time management.
 
 ## CRITERIA
 
-- GIVEN THAT I want to be able to organize my notes and lists digitally, in a single location, with authentication:
+- GIVEN THAT I want to be able to organize notes and lists digitally, in a single location, for my self and any grup members to be authenticated:
   - WHEN I open the app I want to be given an option to be directed to a log-in and/or signup page.
     - THEN I can chose a button, or link, to go to a page(s) where I will find a form to complete based on my option. 
   - WHEN I complete the form, by entering my information, depending upon whether it is my first time, or I am already registered,
@@ -75,7 +75,7 @@ AS A user
 
 ## Installation
 
-The application/site can be displayed in a web browser and was built mobile first to be responsive to a variety of devices and screen sizes.
+The application/site can be displayed in a web browser and is built to be responsive to a variety of devices and screen sizes.
 
 
 ## Usage
@@ -102,7 +102,7 @@ Future features:
 
 ## Contributions
 
-Although, contributions are not allowed, at this time.  You may submit any feedback on the code to through github issues. 
+You may submit any feedback on the code, suggestions, or contribution requests through github issues. 
 
 ## Credits
 Developers:
