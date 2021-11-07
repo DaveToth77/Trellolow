@@ -51,7 +51,7 @@ Main Page
 
 AS A user
 
-- I WANT an easy to use project managerment tool that provides one place to keep information and track of progress on a project.
+- I WANT an easy to use project management tool that provides one place to keep information and track of progress on a project.
   - SO THAT I can eliminate wasted time, lost ideas and notes, and improve my productivity and time management.
 
 ## CRITERIA
